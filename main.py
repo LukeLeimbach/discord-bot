@@ -6,6 +6,8 @@ import discord
 import pickle
 import math
 import asyncio
+import os
+from dotenv import load_dotenv
 
 # References
 # Interaction: https://discordpy.readthedocs.io/en/master/interactions/api.html#interaction
@@ -153,4 +155,7 @@ async def on_member_join(member: discord.Member):
             await member.add_roles(role)
 
 
-client.run("ODI4NDE3NDIzNTIyMjY3MTY2.Gra0im.VUPi0I3aipNBtg2RBfm2XQcJ3j8J7kAU7gs59g")
+# Get token from .env and run client
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+client.run(TOKEN)
