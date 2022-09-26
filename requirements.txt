@@ -1,4 +1,4 @@
-git+https://github.com/Rapptz/discord.py.git@master
+git+https://github.com/Rapptz/discord.py.git@master#egg=discord-py~=2.0.0
 pyNaCl~=1.4.0
 discord-ext-typed-commands
 threaded
